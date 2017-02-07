@@ -1,0 +1,23 @@
+@import "map-get-if-exists";
+
+@function global-config($name){
+    @if $name == 'base-unit' and variable-exists('base-unit') {
+        @return map-get-if-exists($base-unit, 'unit');
+    }
+    @if $name == 'cells' and variable-exists('cells') {
+        @return $cells;
+    }
+    @if $name == 'grids' and variable-exists('grids') {
+        @return $grids;
+    }
+    @if $name == 'palettes' and variable-exists('palettes') {
+        @return $palettes;
+    }
+    @if $name == 'type' and variable-exists('type') {
+        @return $type;
+    }
+    @else {
+        @error "Variable #{$name} not found";
+        @return false;
+    }
+}
