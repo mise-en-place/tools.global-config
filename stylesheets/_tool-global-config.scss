@@ -10,7 +10,7 @@
     @if $name == 'grids' and variable-exists('grids') {
         @return $grids;
     }
-    @if $name == 'palette' and variable-exists('palettes') {
+    @if $name == 'palette' and variable-exists('palette') {
         @return $palette;
     }
     @if $name == 'type' and variable-exists('type') {
