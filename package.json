@@ -3,13 +3,7 @@
   "version": "1.0.1",
   "description": "Global Config Tool",
   "main": "stylesheets/_tool-global-config.scss",
-  "eyeglass": {
-    "needs": "^1.0.0",
-    "name": "tool-global-config",
-    "exports": "eyeglass-exports.js"
-  },
   "keywords": [
-    "eyeglass-module",
     "sass",
     "mise-en-place"
   ],
